@@ -607,7 +607,7 @@ img {
 .main-header .header-upper .logo-box {
   position: relative;
   float: left;
-  padding: 40px 0px;
+  padding: 20px 0px;
   margin-right: 50px;
   z-index: 7;
 }
@@ -621,7 +621,7 @@ img {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  max-height: 34px;
+  max-height: 55px;
   z-index: 1;
 }
 
@@ -2659,7 +2659,8 @@ img.lazy-image.loaded {
 
 .banner-carousel .content-box h1 {
   display: block;
-  font-size: 140px;
+  /* font-size: 140px; */
+  font-size: 60px;
   line-height: 0.85em;
   color: #ffffff;
   font-weight: 600;
@@ -5108,6 +5109,7 @@ img.lazy-image.loaded {
   min-height: 170px;
 }
 
+
 .trusted-section .featured-block-two .image {
   position: absolute;
   left: 0;
@@ -5914,7 +5916,10 @@ img.lazy-image.loaded {
   min-height: 248px;
   padding-top: 20px;
 }
-
+/* edited by talha */
+.agency-section .featured-block-custom {
+  padding-left: 0px;
+}
 .agency-section .featured-block-two .image {
   position: absolute;
   left: 0;
@@ -6620,7 +6625,7 @@ img.lazy-image.loaded {
 }
 
 .main-footer .logo-widget .logo img {
-  height: 34px;
+  height: 55px;
 }
 
 .main-footer .logo-widget .text {
