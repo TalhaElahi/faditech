@@ -1,0 +1,78 @@
+.contact-info-cards {
+  background: #f7f7f9;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 40px 20px 30px 20px;
+  margin-bottom: 40px;
+}
+
+.contact-info-cards .info-block {
+  margin-bottom: 30px;
+}
+
+.contact-info-cards .inner-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 32px 18px 28px 18px;
+  transition: box-shadow 0.2s;
+}
+
+.contact-info-cards .inner-box.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info-cards .inner-box:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+}
+
+.contact-info-cards .fa {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.contact-info-cards .inner-box h4 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.contact-info-cards .inner-box .text {
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact-info-cards .inner-box a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-info-cards .inner-box a:hover {
+  color: #007bff;
+}
+
+.contact-info-cards .inner-box[style*="background:#222"] {
+  background: #222 !important;
+  color: #fff !important;
+}
+
+.contact-info-cards .inner-box:hover,
+.contact-info-cards .inner-box:hover * {
+  color: #fff !important;
+}
+
+.contact-info-cards .inner-box:hover a {
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  .contact-info-cards .row {
+    flex-direction: column;
+  }
+  .contact-info-cards .info-block {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+} 
