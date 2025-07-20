@@ -14,8 +14,9 @@
         var target = $(this);
         $("html, body")
           .stop()
-          .animate({
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+          .animate(
+            {
+              scrollTop: $(target.attr("href")).offset().top - headerH + "px",
             },
             1200,
             "easeInOutExpo"
@@ -168,12 +169,12 @@
       behaviour: "drag",
       connect: true,
       format: wNumb({
-        decimals: 0
+        decimals: 0,
       }),
       range: {
         min: priceRangeMin,
-        max: priceRangeMax
-      }
+        max: priceRangeMax,
+      },
     });
 
     var limitFieldMin = document.getElementById("min-value-rangeslider");
@@ -199,8 +200,8 @@
       if ($(this).next().val() > 1) {
         if ($(this).next().val() > 1)
           $(this)
-          .next()
-          .val(+$(this).next().val() - 1);
+            .next()
+            .val(+$(this).next().val() - 1);
       }
     });
   }
@@ -208,41 +209,41 @@
   if ($(".countdown-one__list").length) {
     let mainDate = $(".countdown-one__list").data("deadline-date");
     let yearsCondition =
-      undefined == $(".countdown-one__list").data("enable-years") ?
-      false :
-      $(".countdown-one__list").data("enable-years");
+      undefined == $(".countdown-one__list").data("enable-years")
+        ? false
+        : $(".countdown-one__list").data("enable-years");
     let daysCondition =
-      undefined == $(".countdown-one__list").data("enable-days") ?
-      true :
-      $(".countdown-one__list").data("enable-days");
+      undefined == $(".countdown-one__list").data("enable-days")
+        ? true
+        : $(".countdown-one__list").data("enable-days");
     let leadingZeros = $(".countdown-one__list").data("leading-zeros");
     console.log(daysCondition);
     let deadLine =
-      "dynamicDate" == mainDate ?
-      new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000) :
-      "dynamicHour" == mainDate ?
-      new Date(Date.parse(new Date()) + 24 * 60 * 60 * 1000) :
-      mainDate;
+      "dynamicDate" == mainDate
+        ? new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000)
+        : "dynamicHour" == mainDate
+        ? new Date(Date.parse(new Date()) + 24 * 60 * 60 * 1000)
+        : mainDate;
 
     $(".countdown-one__list").countdown({
       date: deadLine,
       leadingZeros: true,
       render: function (date) {
         this.el.innerHTML =
-          (true == yearsCondition ?
-            "<li> <span class='years'> " +
-            (true == leadingZeros ?
-              this.leadingZeros(date.years) :
-              date.years) +
-            " <i> Years </i> </span> </li>" :
-            " ") +
-          (true == daysCondition ?
-            "<li> <span class='days'> " +
-            (true == leadingZeros ?
-              this.leadingZeros(date.days) :
-              date.days) +
-            " <i> Days </i> </span> </li>" :
-            " ") +
+          (true == yearsCondition
+            ? "<li> <span class='years'> " +
+              (true == leadingZeros
+                ? this.leadingZeros(date.years)
+                : date.years) +
+              " <i> Years </i> </span> </li>"
+            : " ") +
+          (true == daysCondition
+            ? "<li> <span class='days'> " +
+              (true == leadingZeros
+                ? this.leadingZeros(date.days)
+                : date.days) +
+              " <i> Days </i> </span> </li>"
+            : " ") +
           "<li> <span class='hours'>" +
           (true == leadingZeros ? this.leadingZeros(date.hours) : date.hours) +
           " <i> Hours </i> </span> </li>" +
@@ -252,7 +253,7 @@
           "<li> <span class='seconds'>" +
           (true == leadingZeros ? this.leadingZeros(date.sec) : date.sec) +
           " <i> Seconds </i> </span> </li>";
-      }
+      },
     });
   }
 
@@ -372,17 +373,17 @@
         TweenMax.set(follower, {
           css: {
             left: posX - 22,
-            top: posY - 22
-          }
+            top: posY - 22,
+          },
         });
 
         TweenMax.set(cursor, {
           css: {
             left: mouseX,
-            top: mouseY
-          }
+            top: mouseY,
+          },
         });
-      }
+      },
     });
 
     $(document).on("mousemove", function (e) {
@@ -421,22 +422,22 @@
       autoplayTimeout: 7000,
       navText: [
         '<span class="icon fa fa-angle-left"></span>',
-        '<span class="icon fa fa-angle-right"></span>'
+        '<span class="icon fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 1
+          items: 1,
         },
         800: {
-          items: 1
+          items: 1,
         },
         992: {
-          items: 1
-        }
-      }
+          items: 1,
+        },
+      },
     });
   }
 
@@ -452,28 +453,28 @@
       dots: false,
       navText: [
         '<span class="icon nav-button-left"></span>',
-        '<span class="icon nav-button-right"></span>'
+        '<span class="icon nav-button-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 2
+          items: 2,
         },
         992: {
-          items: 3
+          items: 3,
         },
         1200: {
-          items: 4
+          items: 4,
         },
         1500: {
-          items: 4
+          items: 4,
         },
         1600: {
-          items: 4
-        }
-      }
+          items: 4,
+        },
+      },
     });
   }
 
@@ -517,33 +518,33 @@
         dots: false,
         navText: [
           '<span class="icon nav-button-left"></span>',
-          '<span class="icon nav-button-right"></span>'
+          '<span class="icon nav-button-right"></span>',
         ],
         responsive: {
           0: {
-            items: 1
+            items: 1,
           },
           600: {
             items: 2,
-            margin: 30
+            margin: 30,
           },
           992: {
             items: 3,
-            margin: 30
+            margin: 30,
           },
           1200: {
             items: 4,
-            margin: 40
+            margin: 40,
           },
           1500: {
             items: 4,
-            margin: 50
+            margin: 50,
           },
           1600: {
             items: 5,
-            margin: 50
-          }
-        }
+            margin: 50,
+          },
+        },
       });
 
     dotsBlock.on("click", "li", function (e) {
@@ -562,28 +563,28 @@
       autoplayTimeout: 5000,
       navText: [
         '<span class="icon fa fa-angle-left"></span>',
-        '<span class="icon fa fa-angle-right"></span>'
+        '<span class="icon fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 2
+          items: 2,
         },
         992: {
-          items: 3
+          items: 3,
         },
         1200: {
-          items: 4
+          items: 4,
         },
         1500: {
-          items: 4
+          items: 4,
         },
         1600: {
-          items: 5
-        }
-      }
+          items: 5,
+        },
+      },
     });
   }
 
@@ -598,28 +599,28 @@
       autoplayTimeout: 5000,
       navText: [
         '<span class="icon fa fa-angle-left"></span>',
-        '<span class="icon fa fa-angle-right"></span>'
+        '<span class="icon fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 2
+          items: 2,
         },
         992: {
-          items: 3
+          items: 3,
         },
         1200: {
-          items: 3
+          items: 3,
         },
         1500: {
-          items: 3
+          items: 3,
         },
         1600: {
-          items: 3
-        }
-      }
+          items: 3,
+        },
+      },
     });
   }
 
@@ -634,25 +635,25 @@
       autoplayTimeout: 5000,
       navText: [
         '<span class="icon fa fa-angle-left"></span>',
-        '<span class="icon fa fa-angle-right"></span>'
+        '<span class="icon fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 2
+          items: 2,
         },
         768: {
-          items: 3
+          items: 3,
         },
         992: {
-          items: 4
+          items: 4,
         },
         1200: {
-          items: 5
-        }
-      }
+          items: 5,
+        },
+      },
     });
   }
 
@@ -666,28 +667,28 @@
       autoplay: 5000,
       navText: [
         '<span class="fa fa-angle-left"></span>',
-        '<span class="fa fa-angle-right"></span>'
+        '<span class="fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         768: {
-          items: 2
+          items: 2,
         },
         992: {
-          items: 3
+          items: 3,
         },
         1200: {
-          items: 3
+          items: 3,
         },
         1500: {
-          items: 4
+          items: 4,
         },
         1600: {
-          items: 4
-        }
-      }
+          items: 4,
+        },
+      },
     });
   }
 
@@ -701,25 +702,25 @@
       autoplay: 5000,
       navText: [
         '<span class="fa fa-angle-left"></span>',
-        '<span class="fa fa-angle-right"></span>'
+        '<span class="fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 1
+          items: 1,
         },
         768: {
-          items: 2
+          items: 2,
         },
         992: {
-          items: 3
+          items: 3,
         },
         1200: {
-          items: 3
-        }
-      }
+          items: 3,
+        },
+      },
     });
   }
 
@@ -734,25 +735,25 @@
       autoplayTimeout: 5000,
       navText: [
         '<span class="icon fa fa-angle-left"></span>',
-        '<span class="icon fa fa-angle-right"></span>'
+        '<span class="icon fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 1
+          items: 1,
         },
         768: {
-          items: 1
+          items: 1,
         },
         992: {
-          items: 2
+          items: 2,
         },
         1200: {
-          items: 2
-        }
-      }
+          items: 2,
+        },
+      },
     });
   }
 
@@ -767,22 +768,22 @@
       autoplayTimeout: 5000,
       navText: [
         '<span class="icon fa fa-angle-left"></span>',
-        '<span class="icon fa fa-angle-right"></span>'
+        '<span class="icon fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 1
+          items: 1,
         },
         768: {
-          items: 1
+          items: 1,
         },
         1200: {
-          items: 1
-        }
-      }
+          items: 1,
+        },
+      },
     });
   }
 
@@ -798,18 +799,18 @@
       dots: true,
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 1
+          items: 1,
         },
         768: {
-          items: 2
+          items: 2,
         },
         1200: {
-          items: 3
-        }
-      }
+          items: 3,
+        },
+      },
     });
   }
 
@@ -824,22 +825,22 @@
       autoplayTimeout: 5000,
       navText: [
         '<span class="icon fa fa-angle-left"></span>',
-        '<span class="icon fa fa-angle-right"></span>'
+        '<span class="icon fa fa-angle-right"></span>',
       ],
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         600: {
-          items: 1
+          items: 1,
         },
         800: {
-          items: 1
+          items: 1,
         },
         1024: {
-          items: 1
-        }
-      }
+          items: 1,
+        },
+      },
     });
   }
 
@@ -850,8 +851,9 @@
         var el = $(this);
         var percent = el.data("percent");
         $(el).css("width", percent).addClass("counted");
-      }, {
-        accY: -50
+      },
+      {
+        accY: -50,
       }
     );
   }
@@ -867,22 +869,26 @@
         if (!$t.hasClass("counted")) {
           $t.addClass("counted");
           $({
-            countNum: $t.find(".count-text").text()
-          }).animate({
-            countNum: n
-          }, {
-            duration: r,
-            easing: "linear",
-            step: function () {
-              $t.find(".count-text").text(Math.floor(this.countNum));
+            countNum: $t.find(".count-text").text(),
+          }).animate(
+            {
+              countNum: n,
             },
-            complete: function () {
-              $t.find(".count-text").text(this.countNum);
+            {
+              duration: r,
+              easing: "linear",
+              step: function () {
+                $t.find(".count-text").text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $t.find(".count-text").text(this.countNum);
+              },
             }
-          });
+          );
         }
-      }, {
-        accY: 0
+      },
+      {
+        accY: 0,
       }
     );
   }
@@ -904,22 +910,26 @@
           readOnly: true,
           thickness: thickness,
           dynamicDraw: true,
-          displayInput: false
+          displayInput: false,
         });
 
         $({
-          value: 0
-        }).animate({
-          value: perc
-        }, {
-          duration: 2000,
-          easing: "swing",
-          progress: function () {
-            elm.val(Math.ceil(this.value)).trigger("change");
+          value: 0,
+        }).animate(
+          {
+            value: perc,
+          },
+          {
+            duration: 2000,
+            easing: "swing",
+            progress: function () {
+              elm.val(Math.ceil(this.value)).trigger("change");
+            },
           }
-        });
-      }, {
-        accY: 0
+        );
+      },
+      {
+        accY: 0,
       }
     );
   }
@@ -1015,8 +1025,8 @@
       openEffect: "fade",
       closeEffect: "fade",
       helpers: {
-        media: {}
-      }
+        media: {},
+      },
     });
   }
 
@@ -1030,22 +1040,22 @@
     $("#contact-form").validate({
       rules: {
         username: {
-          required: true
+          required: true,
         },
         email: {
           required: true,
-          email: true
+          email: true,
         },
         phone: {
-          required: true
+          required: true,
         },
         subject: {
-          required: true
+          required: true,
         },
         message: {
-          required: true
-        }
-      }
+          required: true,
+        },
+      },
     });
   }
 
@@ -1054,8 +1064,9 @@
     $(".scroll-to-target").on("click", function () {
       var target = $(this).attr("data-target");
       // animate
-      $("html, body").animate({
-          scrollTop: $(target).offset().top
+      $("html, body").animate(
+        {
+          scrollTop: $(target).offset().top,
         },
         1000
       );
@@ -1071,7 +1082,7 @@
       animateClass: "animated", // animation css class (default is animated)
       offset: 0, // distance to the element when triggering the animation (default is 0)
       mobile: false, // trigger animations on mobile devices (default is true)
-      live: true // act on asynchronously loaded content (default is true)
+      live: true, // act on asynchronously loaded content (default is true)
     });
     wow.init();
   }
@@ -1099,8 +1110,9 @@
         var target = $(this);
         $("html, body")
           .stop()
-          .animate({
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+          .animate(
+            {
+              scrollTop: $(target.attr("href")).offset().top - headerH + "px",
             },
             1200,
             "easeInOutExpo"
@@ -1145,19 +1157,19 @@
 	   When document is Scrollig, do
 	   ========================================================================== */
 
-  $(window).on("scroll", function () {
-    headerStyle();
-    OnePageMenuScroll();
-    OnePageMenuScrollTwo();
-    if ($(".scroll-to-top").length) {
-      var strickyScrollPos = 100;
-      if ($(window).scrollTop() > strickyScrollPos) {
-        $(".scroll-to-top").fadeIn(500);
-      } else if ($(this).scrollTop() <= strickyScrollPos) {
-        $(".scroll-to-top").fadeOut(500);
-      }
-    }
-  });
+  // $(window).on("scroll", function () {
+  //   headerStyle();
+  //   OnePageMenuScroll();
+  //   OnePageMenuScrollTwo();
+  //   if ($(".wp-link").length) {
+  //     var strickyScrollPos = 100;
+  //     if ($(window).scrollTop() > strickyScrollPos) {
+  //       $(".wp-link").fadeIn(500);
+  //     } else if ($(this).scrollTop() <= strickyScrollPos) {
+  //       $(".wp-link").fadeOut(500);
+  //     }
+  //   }
+  // });
 
   /* ==========================================================================
 	   When document is Resized, do
@@ -1184,7 +1196,7 @@
     if ($(".masonary-layout").length) {
       $(".masonary-layout").isotope({
         layoutMode: "masonry",
-        itemSelector: ".masonary-item"
+        itemSelector: ".masonary-item",
       });
     }
 
@@ -1196,8 +1208,8 @@
         animationOptions: {
           duration: 500,
           easing: "linear",
-          queue: false
-        }
+          queue: false,
+        },
       });
       // on click filter links
       postFilterList.on("click", function () {
@@ -1211,8 +1223,8 @@
           animationOptions: {
             duration: 500,
             easing: "linear",
-            queue: false
-          }
+            queue: false,
+          },
         });
         return false;
       });
@@ -1251,21 +1263,21 @@
       autoplay: 5000,
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         768: {
-          items: 2
+          items: 2,
         },
         992: {
-          items: 3
+          items: 3,
         },
         1200: {
-          items: 3
+          items: 3,
         },
         1400: {
-          items: 4
-        }
-      }
+          items: 4,
+        },
+      },
     });
   }
   if ($(".service-twelev__carousel").length) {
@@ -1276,26 +1288,26 @@
       nav: true,
       navText: [
         '<span class="flaticon-left-arrow"></span>',
-        '<span class="flaticon-right-arrow"></span>'
+        '<span class="flaticon-right-arrow"></span>',
       ],
       dots: true,
       smartSpeed: 700,
       autoplay: 5000,
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         768: {
-          items: 2
+          items: 2,
         },
         992: {
-          items: 3
-        }
-      }
+          items: 3,
+        },
+      },
     });
   }
   if ($(".testimonial-twelev").length) {
-    $('.testimonial-twelev__carousel').slick({
+    $(".testimonial-twelev__carousel").slick({
       dots: false,
       arrows: false,
       infinite: false,
@@ -1303,9 +1315,9 @@
       fade: true,
       asNavFor: ".testimonial-twelev__thumb",
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     });
-    $('.testimonial-twelev__thumb').slick({
+    $(".testimonial-twelev__thumb").slick({
       dots: false,
       arrows: false,
       infinite: false,
@@ -1313,7 +1325,7 @@
       focusOnSelect: true,
       asNavFor: ".testimonial-twelev__carousel",
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     });
   }
   /*if ($(".testimonial-twelev__carousel").length) {
@@ -1342,20 +1354,23 @@
       dots: true,
       smartSpeed: 700,
       autoplay: 5000,
-      items: 1
+      items: 1,
     });
   }
   if ($(".project-thirteen__carousel").length) {
     var $slider = $(".project-thirteen__carousel");
     var $progressBar = $(".project-thirteen__progress");
     var $progressBarLabel = $(".slider__label");
-    $slider.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-      var calc = (nextSlide / (slick.slideCount - 1)) * 100;
-      $progressBar
-        .css("background-size", "100%" + calc + "%")
-        .attr("aria-valuenow", calc);
-      $progressBarLabel.text(calc + "% completed");
-    });
+    $slider.on(
+      "beforeChange",
+      function (event, slick, currentSlide, nextSlide) {
+        var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+        $progressBar
+          .css("background-size", "100%" + calc + "%")
+          .attr("aria-valuenow", calc);
+        $progressBarLabel.text(calc + "% completed");
+      }
+    );
 
     $slider.slick({
       slidesToShow: 3,
@@ -1366,16 +1381,20 @@
       centerMode: true,
       centerPadding: 0,
       arrows: true,
-      nextArrow: "<button class=\"next\"><i class=\"flaticon-right-arrow\"></i></button>",
-      prevArrow: "<button class=\"prev\"><i class=\"flaticon-left-arrow\"></i></button>",
+      nextArrow:
+        '<button class="next"><i class="flaticon-right-arrow"></i></button>',
+      prevArrow:
+        '<button class="prev"><i class="flaticon-left-arrow"></i></button>',
       speed: 400,
-      responsive: [{
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }, ]
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     });
   }
 })(window.jQuery);
