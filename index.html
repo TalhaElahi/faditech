@@ -26,6 +26,8 @@
     <!-- Responsive File -->
     <link href="css/responsive.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="css/custom.css">
+
     <!-- Color css -->
     <link
       rel="stylesheet"
@@ -58,6 +60,59 @@
         display: inline-block;
         vertical-align: middle;
       }
+
+
+
+/* Tablet: 2 Columns */
+@media (max-width: 992px) {
+
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .industry-item{
+    margin-inline: 40px;
+  }
+
+  .industry-item img {
+    height: 160px;
+  }
+  .industry-list{
+    padding-inline: 15%;
+  }
+  #industries{
+    padding-top: 0px !important;
+  }
+}
+
+/* Mobile: 1 Column */
+@media (max-width: 600px) {
+  .industry-list{
+    padding-inline: 12%;
+  }
+  .industries-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+   .industry-item{
+    margin-inline: 40px;
+  }
+  .industry-item img {
+    height: 150px;
+  }
+
+  .industry-item h4 {
+    font-size: 16px;
+  }
+  #industries{
+    padding-top: 0px !important;
+  }
+}
+
+
+
     </style>
 
     <link
@@ -568,12 +623,12 @@
               </div>
             </div>
                     <ul class="list-group list-group-flush-" style="background: transparent;">
-    <li class="list-group-items">At  <strong>FEDI Tech</strong>, We think big, build smart, and dig deep.</li>
-    <li class="list-group-items"><strong>FEDI Tech</strong> bring speed to strategy, creativity to every challenge, and clarity to complexity, which is why industries work with us.</li>
-    <li class="list-group-items">
+    <li class="list-group-items industry-list">At  <strong>FEDI Tech</strong>, We think big, build smart, and dig deep.</li>
+    <li class="list-group-items industry-list"><strong>FEDI Tech</strong> bring speed to strategy, creativity to every challenge, and clarity to complexity, which is why industries work with us.</li>
+    <li class="list-group-items industry-list">
       We are more than just the best service provider; with a team that listens, innovates, and delivers
     </li>
-    <li class="list-group-items">
+    <li class="list-group-items industry-list">
      We understand industries; we don't just work with them.
     </li>
   </ul>
@@ -627,7 +682,7 @@
               <div class="inner">
                 <div class="sec-title">
                   <h2>
-                    We do beyond other<br />platforms<span class="dot">.</span>
+                    We do beyond other platforms<span class="dot">.</span>
                   </h2>
                 </div>
                 <div class="featured-block clearfix">

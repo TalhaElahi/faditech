@@ -1,0 +1,144 @@
+.privacy-container {
+  background: var(--thm-black) url(../images/background/pattern-1.png) center
+    top repeat;
+  padding-inline: 100px;
+  padding-block: 40px;
+  color: #fff;
+}
+
+.privacy-container h2 {
+  color: rgb(9, 212, 9);
+  text-align: center;
+  padding-block: 10px;
+}
+.privacy-container h3 {
+  color: #cccccc;
+}
+
+.privacy-container p {
+  color: #fff;
+  font-size: 25x;
+}
+
+.privacy-container ul li > strong {
+  color: rgb(9, 212, 9);
+}
+
+/* terms and conditions file styling  */
+.terms-container {
+  background: var(--thm-black) url(../images/background/pattern-1.png) center
+    top repeat;
+  padding-inline: 100px;
+  padding-block: 40px;
+  color: #fff;
+}
+
+.terms-section h2 {
+  color: rgb(9, 212, 9);
+  text-align: center;
+  padding-block: 10px;
+}
+.terms-section h3 {
+  color: #cccccc;
+}
+
+.terms-section p {
+  color: #fff;
+  font-size: 25x;
+}
+
+.terms-section ol li > strong {
+  color: rgb(9, 212, 9);
+}
+
+/* Responsiveness for  the privacy policy section and terms and conditios section */
+
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 20px;
+  }
+
+  .terms-container h2 {
+    font-size: 20px;
+  }
+
+  .terms-container p,
+  .terms-container li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .terms-section {
+    padding: 30px 10px;
+  } */
+
+  .terms-container {
+    padding: 15px;
+  }
+
+  .terms-container h2 {
+    font-size: 35px;
+  }
+
+  .terms-container p,
+  .terms-container li {
+    font-size: 18px;
+  }
+}
+
+/* privacy styling  */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 20px;
+  }
+
+  .privacy-container h2 {
+    font-size: 22px;
+  }
+
+  .privacy-container h3 {
+    font-size: 18px;
+  }
+
+  .privacy-container p,
+  .privacy-container ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .privacy-section {
+    padding: 30px 10px;
+  } */
+
+  .privacy-container {
+    padding: 25px;
+  }
+
+  .privacy-container h2 {
+    font-size: 35px;
+  }
+
+  .privacy-container h3 {
+    font-size: 25px;
+  }
+
+  .privacy-container p,
+  .privacy-container ul li {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .owl-carousel .owl-stage-outer {
+    height: 450px !important;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .owl-carousel .owl-stage-outer {
+    height: 600px !important;
+  }
+}
