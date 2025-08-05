@@ -11290,7 +11290,7 @@ img.lazy-image.loaded {
   height: 100%;
   min-height: 100%;
   padding: 45px 45px 40px;
-  background: #ffffff;
+  background: #1DE32D ;
   /* border-radius: 7px; */
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
@@ -11299,7 +11299,7 @@ img.lazy-image.loaded {
 }
 
 .contact-section .info-block .inner-box:hover {
-  background: var(--thm-black);
+  background: #000000;
 }
 
 .contact-section .info-block .inner-box h5 {
@@ -25109,6 +25109,7 @@ img.lazy-image.loaded {
 # Work Together
 --------------------------------------------------------------*/
 .work-together {
+  background: #1DE32D;
   position: relative;
   display: block;
 }
@@ -31317,8 +31318,7 @@ img.lazy-image.loaded {
 
 /* Who We Are Section */
 
-.who-we-section,
-.work-together {
+.who-we-section {
   background-color: #2f2f2f;
   color: #fff;
   padding-top: 100px;
@@ -31326,18 +31326,40 @@ img.lazy-image.loaded {
   margin-inline: 0px;
   max-width: 100%;
 }
-.who-we-heading,
-.work-together-heading {
+
+.work-together {
+  background-color: #1DE32D;
+  color: #fff;
+  padding-top: 100px;
+  padding-inline: 0px;
+  margin-inline: 0px;
+  max-width: 100%;
+}
+
+
+.who-we-heading {
   color: #fff;
 }
+
+.work-together-heading {
+  color: #000;
+  font-weight: 500;
+  font-size: 45px;
+}
+
 .list-group-flush,
 .list-group-item,
 .list-group-flush- {
   background-color: #2f2f2f;
   color: #fff;
 }
+.list-group-item2{
+padding-inline: 309px;
+color: #fff;
+
+}
 .list-group-item,
-.list-group-items {
+.list-group-items, .list-group-item2 {
   padding-block: 5px;
   padding-inline: 17%;
 }
@@ -31357,6 +31379,18 @@ img.lazy-image.loaded {
   color: var(--thm-base);
   font-weight: 400;
 }
+
+.work-together ul li:before{
+    content: "\f107";
+    font-family: "Flaticon";
+    position: absolute;
+    margin-left: 12%;
+    left: 0;
+    /* top: -1px; */
+    color: #fff;
+    font-weight: 400;
+}
+
 
 .header-upper .inner-container {
   display: flex;
@@ -31454,4 +31488,8 @@ img.lazy-image.loaded {
 
 .portfolio-head h2{
 text-decoration: underline;
+}
+
+.privacy-container{
+  background-color: grey;
 }
