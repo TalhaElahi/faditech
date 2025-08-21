@@ -5674,7 +5674,7 @@ img.lazy-image.loaded {
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .sponsors-outer .image-box img:hover {
@@ -11290,7 +11290,7 @@ img.lazy-image.loaded {
   height: 100%;
   min-height: 100%;
   padding: 45px 45px 40px;
-  background: #1DE32D ;
+  background: #1de32d;
   /* border-radius: 7px; */
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
@@ -25109,7 +25109,7 @@ img.lazy-image.loaded {
 # Work Together
 --------------------------------------------------------------*/
 .work-together {
-  background: #1DE32D;
+  background: #1de32d;
   position: relative;
   display: block;
 }
@@ -31328,14 +31328,13 @@ img.lazy-image.loaded {
 }
 
 .work-together {
-  background-color: #1DE32D;
+  background-color: #1de32d;
   color: #fff;
   padding-top: 100px;
   padding-inline: 0px;
   margin-inline: 0px;
   max-width: 100%;
 }
-
 
 .who-we-heading {
   color: #fff;
@@ -31353,13 +31352,13 @@ img.lazy-image.loaded {
   background-color: #2f2f2f;
   color: #fff;
 }
-.list-group-item2{
-padding-inline: 309px;
-color: #fff;
-
+.list-group-item2 {
+  padding-inline: 309px;
+  color: #fff;
 }
 .list-group-item,
-.list-group-items, .list-group-item2 {
+.list-group-items,
+.list-group-item2 {
   padding-block: 5px;
   padding-inline: 17%;
 }
@@ -31380,17 +31379,16 @@ color: #fff;
   font-weight: 400;
 }
 
-.work-together ul li:before{
-    content: "\f107";
-    font-family: "Flaticon";
-    position: absolute;
-    margin-left: 12%;
-    left: 0;
-    /* top: -1px; */
-    color: #fff;
-    font-weight: 400;
+.work-together ul li:before {
+  content: "\f107";
+  font-family: "Flaticon";
+  position: absolute;
+  margin-left: 12%;
+  left: 0;
+  /* top: -1px; */
+  color: #fff;
+  font-weight: 400;
 }
-
 
 .header-upper .inner-container {
   display: flex;
@@ -31419,9 +31417,11 @@ color: #fff;
 }
 
 .industries-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   gap: 22px;
   max-width: 1220px;
   margin: 20px auto;
@@ -31486,10 +31486,22 @@ color: #fff;
   text-align: center;
 }
 
-.portfolio-head h2{
-text-decoration: underline;
+.portfolio-head h2 {
+  text-decoration: underline;
 }
 
-.privacy-container{
+.privacy-container {
   background-color: grey;
+}
+/* Portfolio Section Style */
+.dev-container {
+  background-color: #333333;
+  padding-top: 125px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.dev-heading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0px;
 }

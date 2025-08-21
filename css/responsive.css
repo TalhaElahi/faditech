@@ -2040,3 +2040,30 @@
     display: none;
   }
 }
+
+@media (max-width: 425px) {
+  #achievement-section {
+    padding-top: 25px !important;
+  }
+  .industries-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .pb80 {
+    padding: 80px 30px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .list-group-items {
+    padding-inline: 11%;
+  }
+  /* .contact-section .info-block .inner-box {
+    width: fit-content;
+  } */
+  .carts {
+    justify-content: center !important;
+  }
+}
