@@ -2,7 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- Meta Title -->
     <title>FediTech - Digital Agency | Home</title>
+
+   <!-- Meta Description -->
+  <meta name="description" content="FediTech is a digital agency providing web development, SEO, digital marketing, and IT solutions. Explore our services, portfolio, and the industries we work with. Contact us to grow your business online.">
+
+  <!-- Meta Keywords -->
+  <meta name="keywords" content="FediTech, digital agency, web development, SEO services, digital marketing, IT solutions, portfolio, industries we work with, software development, online branding, business growth, web design, ecommerce solutions">
+
+  <!-- Author -->
+  <meta name="author" content="FediTech">
+
+  <!-- Open Graph (Facebook/LinkedIn/WhatsApp) -->
+  <meta property="og:title" content="FediTech - Web Development, SEO, Digital Marketing & IT Solutions" />
+  <meta property="og:description" content="Explore FediTech’s services, portfolio, and industries we work with. We provide expert web development, SEO, and digital marketing solutions." />
+  <meta property="og:image" content="https://yourwebsite.com/images/home-preview.png" />
+  <meta property="og:url" content="https://yourwebsite.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FediTech - Web Development, SEO, Digital Marketing & IT Solutions">
+  <meta name="twitter:description" content="FediTech provides professional web development, SEO, digital marketing, and IT services for businesses across multiple industries.">
+  <meta name="twitter:image" content="https://yourwebsite.com/images/home-preview.png">
+
+  <!-- Schema Markup (Homepage with Services + Portfolio + Industries) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FediTech",
+    "url": "https://yourwebsite.com",
+    "logo": "https://yourwebsite.com/images/logo.png",
+    "description": "FediTech is a digital agency providing web development, SEO, digital marketing, and IT solutions.",
+    "sameAs": [
+      "https://www.facebook.com/YourPage",
+      "https://www.linkedin.com/company/YourPage",
+      "https://twitter.com/YourPage",
+      "https://www.instagram.com/YourPage"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+92-300-1234567",
+      "contactType": "customer service",
+      "areaServed": "Worldwide",
+      "availableLanguage": ["English"]
+    },
+    "makesOffer": [
+      {
+        "@type": "Service",
+        "name": "Web Development",
+        "description": "Custom websites, ecommerce platforms, and web apps designed for performance and scalability."
+      },
+      {
+        "@type": "Service",
+        "name": "SEO Services",
+        "description": "Search engine optimization to boost rankings, traffic, and visibility online."
+      },
+      {
+        "@type": "Service",
+        "name": "Digital Marketing",
+        "description": "Comprehensive online marketing strategies including PPC, social media, and content marketing."
+      },
+      {
+        "@type": "Service",
+        "name": "IT Solutions",
+        "description": "Custom IT services and support tailored for business needs across industries."
+      }
+    ],
+    "hasPart": {
+      "@type": "CreativeWork",
+      "name": "Portfolio",
+      "description": "Showcasing FediTech’s successful projects across multiple industries.",
+      "url": "https://yourwebsite.com/#portfolio"
+    },
+    "knowsAbout": [
+      "Healthcare industry IT solutions",
+      "Retail and ecommerce development",
+      "Education and e-learning platforms",
+      "Finance and fintech software",
+      "Real estate digital marketing"
+    ]
+  }
+  </script>
+  
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -104,7 +188,9 @@
   }
 
   .industry-item h4 {
-    font-size: 16px;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 20px;
   }
   #industries{
     padding-top: 0px !important;
@@ -239,7 +325,7 @@
           <div class="side-menu__sep"></div>
           <!-- /.side-menu__sep -->
           <div class="side-menu__content">
-            <p>
+            <!-- <p>
               Linoor is a premium Template for Digital Agencies, Start Ups,
               Small Business and a wide range of other agencies.
             </p>
@@ -247,16 +333,33 @@
               <a href="mailto:needhelp@linoor.com">needhelp@linoor.com</a>
               <br />
               <a href="tel:888-999-0000">888 999 0000</a>
-            </p>
+            </p> -->
             <div class="side-menu__social">
-              <a href="https://www.facebook.com/thefeditech/"
-                ><i class="fab fa-facebook-square"></i
-              ></a>
-              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-              <a href="https://www.instagram.com/thefeditech/"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <!-- <a href="#"><i class="fab fa-pinterest-p"></i></a> -->
+               <a
+                          href="https://www.facebook.com/feditechofficial"
+                          target="_blank"
+                          ><span class="fab fa-facebook-square"></span
+                        ></a>
+                        <a
+                          href="https://www.instagram.com/feditechofficial"
+                          target="_blank"
+                          ><span class="fab fa-instagram"></span
+                        ></a>
+                        <a href="https://wa.me/+923192920504" target="_blank"
+                          ><span class="fab fa-whatsapp"></span
+                        ></a>
+                        <a href="https://x.com/fedi_tech" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" fill="#ccc " viewBox="0 0 24 24">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+</a>
+                        <a
+                          href="https://www.linkedin.com/company/feditech"
+                          target="_blank"
+                        >
+                          <span class="fab fa-linkedin"></span>
+                        </a>
+                    
             </div>
           </div>
           <!-- /.side-menu__content -->
@@ -285,7 +388,7 @@
         <!-- /.search-popup__inner -->
       </div>
       <!-- /.search-popup -->
-
+      
       <!-- Banner Section -->
       <section class="banner-section banner-one">
         <div class="left-based-text">
@@ -308,17 +411,43 @@
                     ><span>Facebook</span></a
                   >
                 </li>
-                <!-- <li><a href="#"><span>Youtube</span></a></li> -->
+                <li>
+                  <a href="https://x.com/fedi_tech"
+                    ><span>X (Formerly Twitter) </span></a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/feditech"
+                    ><span>LinkedIn</span></a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </div>
-
+<!-- Mobile Banner Code Start-->
+        <div class="lazy-dog">
+          <!-- Slide Item -->
+          <div class="mbl-imgs">
+            <h2 style="font-size: 45px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    padding-inline: 40px;
+    font-style: normal;
+    font-family: 'Teko';
+" class="mbl-heading">TECHNICAL <br/> Solution For Every Nation </h2>
+            <img class="mbl-bg" src="./images/mbl-bg.png" alt="FediTech Mobile Banner Bg">
+            <img class="mbl-banner" src="./images/mbl-img.png" alt="FediTech Mobile Banner Img">
+          </div>
+        </div>
+<!-- Mobile Banner Code End -->
         <div class="banner-carousel owl-theme owl-carousel">
           <!-- Slide Item -->
           <div class="slide-item">
             <div
-              class="image-layer"
+              class="image-layer lazy-fox"
               style="background-image: url(images/main-slider/banner-06.jpg); background-size: contain;" 
             ></div>
             <div class="left-top-line"></div>
@@ -344,6 +473,19 @@
         </div>
       </section>
       <!--End Banner Section -->
+
+ <div class="banner-inner">
+          <div class="auto-container">
+            <div class="inner-container clearfix">
+              <h1 class="main-heading" style="color: #fff; text-align: center;" > FediTech-Digital Agency</h1>
+              <div class="page-nav">
+                <ul class="bread-crumb clearfix">
+                  <li><a href="index-main.html"></a></li>
+                  <li class="active"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
       <!--Services Section-->
       <section class="services-section" id="achievement-section" style="padding-top: 40px;">

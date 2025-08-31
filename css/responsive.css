@@ -2061,9 +2061,47 @@
     padding-inline: 11%;
   }
   /* .contact-section .info-block .inner-box {
-    width: fit-content;
+    width: fit-content;`
   } */
   .carts {
     justify-content: center !important;
+  }
+}
+@media (max-width: 425px) {
+  .main-heading {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .lazy-fox {
+    display: none;
+  }
+  .lazy-dog {
+    display: block;
+    margin-bottom: -294px;
+  }
+  .mbl-imgs {
+    margin-top: 95px;
+    position: relative;
+    width: 870px;
+  }
+  .mbl-banner {
+    bottom: 730px;
+    width: 203px;
+    position: relative;
+    top: -295px;
+    left: 113px;
+  }
+  .banner-carousel.owl-theme.owl-carousel.owl-loaded.owl-drag {
+    display: none;
+  }
+  .ain-heading {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 451px) {
+  .lazy-dog {
+    display: none;
   }
 }
