@@ -2091,12 +2091,12 @@
     width: 203px;
     position: relative;
     top: -295px;
-    left: 113px;
+    left: 95px;
   }
   .banner-carousel.owl-theme.owl-carousel.owl-loaded.owl-drag {
     display: none;
   }
-  .ain-heading {
+  .main-heading {
     margin-top: 20px;
   }
 }
