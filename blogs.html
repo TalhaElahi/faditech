@@ -101,10 +101,29 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <!--[if lt IE 9
-      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
-    ><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style>
+  .card{
+    background-color: #1DE32D;
+  }
+  .blogs-grid{
+    row-gap: 35px;
+  }
+  .card-img-top{
+    width: 350px;
+    height: 207px;
+    padding: 0;
+    margin: auto;
+  }
+  .btn-read{
+    color: white;
+    background-color: #181d19;
+    padding: 10px 25px;
+    border-radius: 10px;
+  }
+  .btn-read:hover{
+    background-color: #353a36;
+  }
+</style>
   </head>
 
   <body>
@@ -290,6 +309,81 @@
       <!--End Banner Section -->
 
 <!-- Blogs Section Started -->
+
+ <!-- Main Content Started -->
+<section class="blog-container p-5 bg-dark">
+  <h2 class="text-center mb-4">Fedi Tech Blogs</h2>
+  <div class="row gap-6 blogs-grid">
+
+    <!-- Blog 1 -->
+    <div class="col-md-6 col-lg-4">
+      <a href="blog-details.html?id=1" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm blog-card">
+          <img src="./images/clients/2.png" class="card-img-top" alt="Why Fedi Tech is Better">
+          <div class="card-body">
+            <h5 class="card-title">Why Fedi Tech is Better</h5>
+            <p class="card-text">
+              In today’s digital world, businesses need reliable IT services to grow. Since 2021, Fedi Tech has been delivering affordable, high-quality solutions worldwide with a focus on trust and client satisfaction.
+            </p>
+            <span class="btn-read">Read More</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="col-md-6 col-lg-4">
+      <a href="blog-details.html?id=2" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm blog-card">
+          <img src="./images/clients/2.png" class="card-img-top" alt="How Fedi Tech Makes Brands Bigger">
+          <div class="card-body">
+            <h5 class="card-title">How Fedi Tech Makes Brands Bigger</h5>
+            <p class="card-text">
+              Building a brand goes beyond logos—it's about trust, creativity, and consistency. Fedi Tech helps businesses grow with complete IT solutions and long-term dedication.
+            </p>
+            <span class="btn-read">Read More</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Blog 3 -->
+    <div class="col-md-6 col-lg-4">
+      <a href="blog-details.html?id=3" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm blog-card">
+          <img src="./images/clients/2.png" class="card-img-top" alt="How Fedi Tech Supports Small Businesses">
+          <div class="card-body">
+            <h5 class="card-title">How Fedi Tech Supports Small Businesses</h5>
+            <p class="card-text">
+              Small businesses struggle with budgets and competition. Fedi Tech provides affordable, smart strategies and full dedication to help them grow locally and globally.
+            </p>
+            <span class="btn-read">Read More</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Blog 4 -->
+    <div class="col-md-6 col-lg-4">
+      <a href="blog-details.html?id=4" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm blog-card">
+          <img src="./images/clients/2.png" class="card-img-top" alt="How Fedi Tech Satisfies Clients">
+          <div class="card-body">
+            <h5 class="card-title">How Fedi Tech Satisfies Clients</h5>
+            <p class="card-text">
+              At Fedi Tech, client satisfaction is our top priority. We go the extra mile with clear communication, transparency, and 100% effort to ensure long-term trust and success.
+            </p>
+            <span class="btn-read">Read More</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- Main Content Ended -->
 
       <!-- Main Footer -->
       <footer class="main-footer">
