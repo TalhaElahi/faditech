@@ -8462,7 +8462,7 @@ img.lazy-image.loaded {
 
 .testimonials-five-card__text {
   margin: 0;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 1.5em;
   color: #fff;
   font-weight: 300;
@@ -8474,7 +8474,7 @@ img.lazy-image.loaded {
 
 @media (min-width: 992px) {
   .testimonials-five-card__text {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 .testimonials-five-card__title {

@@ -1,56 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>FediTech - Digital Agency | BLogs</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Detail Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-
- <!-- Meta Description -->
-  <meta name="description" content="Read the FediTech blog for the latest articles on web development, SEO strategies, digital marketing, and technology trends to help businesses grow online.">
-
-  <!-- Meta Keywords -->
-  <meta name="keywords" content="FediTech blog, web development blog, SEO tips, digital marketing articles, app development insights, IT trends, technology blog">
-
-  <!-- Author -->
-  <meta name="author" content="FediTech">
-
-  <!-- Open Graph (Facebook/LinkedIn/WhatsApp) -->
-  <meta property="og:title" content="FediTech Blog - Web Development, SEO & Digital Marketing Insights" />
-  <meta property="og:description" content="Explore expert blogs from FediTech on SEO, web development, digital marketing, and the latest technology trends." />
-  <meta property="og:image" content="https://yourwebsite.com/images/blog-preview.png" />
-  <meta property="og:url" content="https://yourwebsite.com/blogs" />
-  <meta property="og:type" content="blog" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FediTech Blog - Web Development, SEO & Digital Marketing Insights">
-  <meta name="twitter:description" content="Read expert blogs from FediTech on SEO, web development, digital marketing, and IT trends to grow your business online.">
-  <meta name="twitter:image" content="https://yourwebsite.com/images/blog-preview.png">
-
-  <!-- Schema Markup (Blog Page) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "headline": "FediTech Blog - Web Development, SEO & Digital Marketing Insights",
-    "description": "Read the FediTech blog for the latest articles on web development, SEO strategies, digital marketing, and technology trends.",
-    "url": "https://yourwebsite.com/blogs",
-    "publisher": {
-      "@type": "Organization",
-      "name": "FediTech",
-      "url": "https://yourwebsite.com",
-      "logo": "https://yourwebsite.com/images/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/feditech",
-        "https://www.twitter.com/feditech",
-        "https://www.linkedin.com/company/feditech",
-        "https://www.instagram.com/feditech"
-      ]
-    }
-  }
-  </script>
-
-    <!-- Stylesheets -->
+ <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Teko:wght@300;400;500;600;700&display=swap"
@@ -101,32 +60,86 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-<style>
-  .card{
-    background-color: #1DE32D;
-  }
-  .blogs-grid{
-    row-gap: 35px;
-  }
-  .card-img-top{
-    width: 350px;
-    height: 207px;
-    padding: 0;
-    margin: auto;
-  }
-  .btn-read{
-    color: white;
-    background-color: #181d19;
-    padding: 10px 25px;
-    border-radius: 10px;
-  }
-  .btn-read:hover{
-    background-color: #353a36;
-  }
-</style>
-  </head>
 
+
+    <style>
+      .blog-header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .blog-header img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .blog-header p {
+        color: #1de32d;
+      }
+      .blog-content {
+        margin-top: 20px;
+        line-height: 1.8;
+      }
+      /* Blog Details Page Theme */
+
+      body {
+        background-color: #000; /* black background */
+        color: #fff; /* default text white */
+      }
+
+      .blog-details-container {
+        padding: 40px;
+      }
+      .blog-header h1{
+        font-size: 60px;
+    margin-top: 30px;
+    padding-top: 63px;
+    color: #1de32D;
+      }
+
+      /* Headings */
+      .blog-details-container h1,
+      .blog-details-container h2,
+      .blog-details-container h3 {
+        color: #1de32d; /* theme green */
+      }
+
+      /* Subheadings */
+      .blog-details-container h4,
+      .blog-details-container h5,
+      .blog-details-container h6 {
+        color: #ffffff; /* white */
+      }
+
+      /* Paragraphs */
+      .blog-details-container p {
+        color: #ffffff; /* white */
+        line-height: 1.7;
+        font-size: 1rem;
+      }
+
+      /* Optional: spacing for readability */
+      .blog-details-container h2,
+      .blog-details-container h3,
+      .blog-details-container h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .backBlogs{
+        padding: 10px 25px;
+        color: #000;
+        background-color: #1de32D;
+        border-radius: 10px;
+      }
+      .backBlogs:hover{
+        padding: 10px 25px;
+        color: #000;
+        background-color: #38e046;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
   <body>
+
     <div class="page-wrapper">
       <!-- Preloader -->
       <div class="preloader">
@@ -288,104 +301,11 @@
       </div>
       <!-- /.search-popup -->
 
-      <!-- Blogs Section Started -->
-
-     <!-- Banner Section -->
-      <section class="page-banner">
-        <div
-          class="image-layer"
-          style="background-image: url(images/about-banner.png)"
-        ></div>
-        <!-- <div class="shape-1"></div>
-        <div class="shape-2"></div> -->
-        <div class="banner-inner">
-          <div class="auto-container">
-            <div class="inner-container clearfix">
-              <h1>BLogs</h1>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--End Banner Section -->
-
-<!-- Blogs Section Started -->
-
- <!-- Main Content Started -->
-<section class="blog-container p-5 bg-dark">
-  <h2 class="text-center mb-4">Fedi Tech Blogs</h2>
-  <div class="row gap-6 blogs-grid">
-
-    <!-- Blog 1 -->
-    <div class="col-md-6 col-lg-4">
-      <a href="blogs-details.html?id=1" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm blog-card">
-          <img src="./images/clients/2.png" class="card-img-top" alt="Why Fedi Tech is Better">
-          <div class="card-body">
-            <h5 class="card-title">Why Fedi Tech is Better</h5>
-            <p class="card-text">
-              In today’s digital world, businesses need reliable IT services to grow. Since 2021, Fedi Tech has been delivering affordable, high-quality solutions worldwide with a focus on trust and client satisfaction.
-            </p>
-            <span class="btn-read">Read More</span>
-          </div>
-        </div>
-      </a>
+    <div class="container my-5">
+      <div id="blogDetail" class="blog-detail"></div>
     </div>
 
-    <!-- Blog 2 -->
-    <div class="col-md-6 col-lg-4">
-      <a href="blogs-details.html?id=2" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm blog-card">
-          <img src="./images/clients/2.png" class="card-img-top" alt="How Fedi Tech Makes Brands Bigger">
-          <div class="card-body">
-            <h5 class="card-title">How Fedi Tech Makes Brands Bigger</h5>
-            <p class="card-text">
-              Building a brand goes beyond logos—it's about trust, creativity, and consistency. Fedi Tech helps businesses grow with complete IT solutions and long-term dedication.
-            </p>
-            <span class="btn-read">Read More</span>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Blog 3 -->
-    <div class="col-md-6 col-lg-4">
-      <a href="blogs-details.html?id=3" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm blog-card">
-          <img src="./images/clients/2.png" class="card-img-top" alt="How Fedi Tech Supports Small Businesses">
-          <div class="card-body">
-            <h5 class="card-title">How Fedi Tech Supports Small Businesses</h5>
-            <p class="card-text">
-              Small businesses struggle with budgets and competition. Fedi Tech provides affordable, smart strategies and full dedication to help them grow locally and globally.
-            </p>
-            <span class="btn-read">Read More</span>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Blog 4 -->
-    <div class="col-md-6 col-lg-4">
-      <a href="blogs-details.html?id=4" class="text-decoration-none text-dark">
-        <div class="card h-100 shadow-sm blog-card">
-          <img src="./images/clients/2.png" class="card-img-top" alt="How Fedi Tech Satisfies Clients">
-          <div class="card-body">
-            <h5 class="card-title">How Fedi Tech Satisfies Clients</h5>
-            <p class="card-text">
-              At Fedi Tech, client satisfaction is our top priority. We go the extra mile with clear communication, transparency, and 100% effort to ensure long-term trust and success.
-            </p>
-            <span class="btn-read">Read More</span>
-          </div>
-        </div>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
- <!-- Main Content Ended -->
-
-      <!-- Main Footer -->
+   <!-- Main Footer -->
       <footer class="main-footer">
         <div class="auto-container">
           <!--Widgets Section-->
@@ -539,5 +459,52 @@
     <script src="js/lang.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/color-switcher.js"></script>
+
+
+
+
+
+<!-- Script for logs details rendering  -->
+    <script>
+      // Fetch query parameter from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const blogId = urlParams.get("id");
+
+      // Load blogs from JSON
+      fetch("blogs.json")
+        .then((response) => response.json())
+        .then((blogs) => {
+          const blog = blogs.find((b) => b.id == blogId);
+          const blogDetailContainer = document.getElementById("blogDetail");
+
+          if (blog) {
+            blogDetailContainer.innerHTML = `
+            <div class="blog-header">
+              <h1>${blog.title}</h1>
+              <p class="">${blog.date}</p>
+              <img src="${blog.image}" alt="${blog.title}">
+            </div>
+            <div class="blog-content">
+              ${
+                blog.content && blog.content.trim() !== ""
+                  ? blog.content
+                  : "<p><em>Full content for this blog will be available soon. Stay tuned!</em></p>"
+              }
+            </div>
+            <div class="mt-4">
+              <a href="blogs.html" class="btn backBlogs">Back to Blogs</a>
+            </div>
+          `;
+          } else {
+            blogDetailContainer.innerHTML = `
+            <div class="alert alert-danger">Blog not found!</div>
+            <a href="blogs.html" class="btn backBlogs mt-3">Back to Blogs</a>
+          `;
+          }
+        })
+        .catch((error) => {
+          console.error("Error loading blogs:", error);
+        });
+    </script>
   </body>
 </html>
