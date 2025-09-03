@@ -136,6 +136,11 @@
         background-color: #38e046;
         border-radius: 10px;
       }
+      .blog-detail-img{
+        width: 600px;
+        height: 500px;
+
+      }
     </style>
   </head>
   <body>
@@ -480,9 +485,9 @@
           if (blog) {
             blogDetailContainer.innerHTML = `
             <div class="blog-header">
-              <h1>${blog.title}</h1>
+              <img class="blog-detail-img" src="${blog.image}" alt="${blog.title}">
               <p class="">${blog.date}</p>
-              <img src="${blog.image}" alt="${blog.title}">
+              
             </div>
             <div class="blog-content">
               ${
