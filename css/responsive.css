@@ -2079,6 +2079,7 @@
   .lazy-dog {
     display: block;
     margin-bottom: -240px;
+    height: 875px;
   }
 
   .mbl-imgs {
@@ -2115,6 +2116,10 @@
     height: auto;
     display: block;
     margin: 0 auto;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    display: none;
   }
 }
 
