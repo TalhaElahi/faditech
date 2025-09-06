@@ -8474,7 +8474,7 @@ img.lazy-image.loaded {
 
 @media (min-width: 992px) {
   .testimonials-five-card__text {
-    font-size: 32px;
+    font-size: 25px;
   }
 }
 .testimonials-five-card__title {
@@ -31354,8 +31354,12 @@ img.lazy-image.loaded {
 }
 .list-group-item2 {
   padding-inline: 309px;
-  color: #fff;
+  color: #000;
 }
+.list-group-item2::before {
+  color: #000 !important;
+}
+
 .list-group-item,
 .list-group-items,
 .list-group-item2 {
@@ -31366,6 +31370,17 @@ img.lazy-image.loaded {
 .list-group-item strong,
 .list-group-items strong {
   color: #1de32d;
+}
+
+.list-group li::before {
+  content: "\f107";
+  font-family: "Flaticon";
+  position: absolute;
+  left: 200px;
+  top: 205px;
+  color: #1de32d;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .who-we-section ul li:before {
