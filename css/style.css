@@ -77,6 +77,15 @@
   line-height: inherit;
 }
 
+@font-face {
+  font-family: "Loko Cut Extra Bold";
+  src: url("./fonts/LokoCut-ExtraBold.woff2") format("woff2"),
+    url("./fonts/LokoCut-ExtraBold.woff") format("woff"),
+    url("./fonts/LokoCut-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
 /***
 
 ====================================================================
@@ -621,7 +630,7 @@ img {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  max-height: 55px;
+  max-height: 64px;
   z-index: 1;
 }
 
@@ -31370,17 +31379,6 @@ img.lazy-image.loaded {
 .list-group-item strong,
 .list-group-items strong {
   color: #1de32d;
-}
-
-.list-group li::before {
-  content: "\f107";
-  font-family: "Flaticon";
-  position: absolute;
-  left: 200px;
-  top: 205px;
-  color: #1de32d;
-  font-weight: 400;
-  font-size: 18px;
 }
 
 .who-we-section ul li:before {

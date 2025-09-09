@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Detail Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
- <!-- Stylesheets -->
+    <meta charset="utf-8" />
+    <title>FediTech - Digital Agency |FAQs</title>
+    <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Teko:wght@300;400;500;600;700&display=swap"
@@ -32,7 +26,7 @@
     <!-- Responsive File -->
     <link href="css/responsive.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/css/custom.css">
+   <link href="css/custom.css" rel="stylesheet" />
 
     <!-- Color css -->
     <link
@@ -60,96 +54,96 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-
-
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
     <style>
-      .blog-header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      .blog-header img {
-        max-width: 100%;
-        border-radius: 10px;
-        margin-top: 20px;
-      }
-      .blog-header p {
-        color: #1de32d;
-      }
-      .blog-content {
-        margin-top: 20px;
-        line-height: 1.8;
-      }
-      /* Blog Details Page Theme */
+    /* ===== Global Styles ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0d0d0d; /* Dark background */
+      color: #f0f0f0;
+    }
 
-      body {
-        background-color: #000; /* black background */
-        color: #fff; /* default text white */
-      }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: #00ff88; /* Neon green */
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 50px;
+    }
 
-      .blog-details-container {
-        padding: 40px;
-      }
-      .blog-header h1{
-        font-size: 60px;
-    margin-top: 30px;
-    padding-top: 63px;
-    color: #1de32D;
-      }
+    .faq-container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
 
-      /* Headings */
-      .blog-details-container h1,
-      .blog-details-container h2,
-      .blog-details-container h3 {
-        color: #1de32d; /* theme green */
-      }
+    /* ===== FAQ Accordion ===== */
+    .faq-item {
+      background: #111;
+      border: 1px solid #00ff88;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 10px rgba(0, 255, 136, 0.2);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
 
-      /* Subheadings */
-      .blog-details-container h4,
-      .blog-details-container h5,
-      .blog-details-container h6 {
-        color: #ffffff; /* white */
-      }
+    .faq-question {
+      background: #0d0d0d;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: #00ff88;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      /* Paragraphs */
-      .blog-details-container p {
-        color: #ffffff; /* white */
-        line-height: 1.7;
-        font-size: 1rem;
-      }
+    .faq-question:hover {
+      background: #00ff8844;
+    }
 
-      /* Optional: spacing for readability */
-      .blog-details-container h2,
-      .blog-details-container h3,
-      .blog-details-container h4 {
-        margin-top: 20px;
-        margin-bottom: 10px;
-      }
-      .backBlogs{
-        padding: 10px 25px;
-        color: #000;
-        background-color: #1de32D;
-        border-radius: 10px;
-      }
-      .backBlogs:hover{
-        padding: 10px 25px;
-        color: #000;
-        background-color: #38e046;
-        border-radius: 10px;
-      }
-      .blog-detail-img{
-        width: 600px;
-        height: 500px;
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      background: #1a1a1a;
+      font-size: 16px;
+      color: #ddd;
+      line-height: 1.6;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
 
-      }
-    </style>
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding: 15px 20px;
+    }
+
+    /* Arrow Icon */
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .arrow {
+      transform: rotate(90deg);
+      color: #00ff88;
+    }
+  </style>
   </head>
-  <body>
 
+  <body>
     <div class="page-wrapper">
       <!-- Preloader -->
-      <div class="preloader">
+      <!-- <div class="preloader">
         <div class="icon"></div>
-      </div>
+      </div> -->
 
       <!-- Main Header -->
       <header class="main-header header-style-one">
@@ -251,7 +245,7 @@
               <br />
               <a href="tel:888-999-0000">888 999 0000</a>
             </p> -->
-           <div class="side-menu__social">
+            <div class="side-menu__social">
                <a
                           href="https://www.facebook.com/feditechofficial"
                           target="_blank"
@@ -305,12 +299,147 @@
         <!-- /.search-popup__inner -->
       </div>
       <!-- /.search-popup -->
+<!-- Privacy Policy Section Started -->
 
-    <div class="container my-5">
-      <div id="blogDetail" class="blog-detail"></div>
+<section class="dev-container">
+
+ <h1>Frequently Asked Questions</h1>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What services does Fedi Tech provide?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        Fedi Tech offers web development, digital marketing, SEO, social media management,
+        graphic designing, software development, mobile app development, video editing,
+        animation, and cyber security solutions.
+      </div>
     </div>
 
-   <!-- Main Footer -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Why should I choose Fedi Tech over other IT companies?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        We focus on client satisfaction, affordable pricing, and result-driven strategies.
+        With expertise in IT services and custom solutions, we ensure your business grows with innovation and trust.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Does Fedi Tech provide global IT services?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        Yes, Fedi Tech serves clients worldwide. Whether you need web design, app development, SEO,
+        cyber security, or marketing campaigns, we deliver high-quality services across industries.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How much does digital marketing cost at Fedi Tech?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        Our packages are tailored to your business needs. Pricing starts budget-friendly and scales
+        up depending on campaigns, platforms, and goals. Contact us for a custom quote.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Can Fedi Tech help with custom software and mobile app development?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        Absolutely! Our developers specialize in custom software and mobile app solutions for Android and iOS.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Can Fedi Tech manage social media for my business?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        Yes, we provide complete social media management including content creation,
+        scheduling, ad campaigns, and engagement to boost your brand.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Does Fedi Tech provide graphic designing and video editing services?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        Yes, we offer creative graphic design and professional video editing services.
+        No matter the project size, we deliver high-quality visuals and content.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Does Fedi Tech accept small projects or new brand orders?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        Yes, every project is important to us, whether it’s $5 or $5000.
+        We value all clients equally and provide quality service.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Is Fedi Tech a registered and trusted company?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        Yes, we are a registered IT company trusted by clients worldwide
+        with proven professionalism and long-term reliability.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What payment methods does Fedi Tech use?</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-answer">
+        For local clients, we accept secure bank transfers, while for international clients,
+        we use Payoneer for safe and hassle-free payments.
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // ===== Accordion Script =====
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      const question = item.querySelector(".faq-question");
+      question.addEventListener("click", () => {
+        item.classList.toggle("active");
+
+        // Close other items when one is open
+        faqItems.forEach(other => {
+          if (other !== item) other.classList.remove("active");
+        });
+      });
+    });
+  </script>
+
+</section>
+
+<!-- Privacy Policy Section Ended -->
+
+      <!-- Main Footer -->
       <footer class="main-footer">
         <div class="auto-container">
           <!--Widgets Section-->
@@ -413,10 +542,16 @@
                         <span class="icon flaticon-call"></span
                         ><a href="tel:+92 319 2920504">+92 319 2920504</a>
                       </li>
-                      <li>
+                       <li>
                         <span class="icon flaticon-email-2"></span
                         ><a href="mailto:support@faditech.com"
                           >support@feditechofficial.com</a
+                        >
+                      </li>
+                      <li>
+                        <span class="icon flaticon-email-2"></span
+                        ><a href="mailto:feditechofficial@gmail.com"
+                          >feditechofficial@gmail.com</a
                         >
                       </li>
                     </ul>
@@ -466,52 +601,5 @@
     <script src="js/lang.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/color-switcher.js"></script>
-
-
-
-
-
-<!-- Script for logs details rendering  -->
-    <script>
-      // Fetch query parameter from URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const blogId = urlParams.get("id");
-
-      // Load blogs from JSON
-      fetch("blogs.json")
-        .then((response) => response.json())
-        .then((blogs) => {
-          const blog = blogs.find((b) => b.id == blogId);
-          const blogDetailContainer = document.getElementById("blogDetail");
-
-          if (blog) {
-            blogDetailContainer.innerHTML = `
-            <div class="blog-header">
-              <img class="blog-detail-img" src="${blog.image}" alt="${blog.title}">
-              <p class="">${blog.date}</p>
-              
-            </div>
-            <div class="blog-content">
-              ${
-                blog.content && blog.content.trim() !== ""
-                  ? blog.content
-                  : "<p><em>Full content for this blog will be available soon. Stay tuned!</em></p>"
-              }
-            </div>
-            <div class="mt-4">
-              <a href="blogs.html" class="btn backBlogs">Back to Blogs</a>
-            </div>
-          `;
-          } else {
-            blogDetailContainer.innerHTML = `
-            <div class="alert alert-danger">Blog not found!</div>
-            <a href="blogs.html" class="btn backBlogs mt-3">Back to Blogs</a>
-          `;
-          }
-        })
-        .catch((error) => {
-          console.error("Error loading blogs:", error);
-        });
-    </script>
   </body>
 </html>

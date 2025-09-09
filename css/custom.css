@@ -7,17 +7,18 @@
 }
 
 .privacy-container h2 {
-  color: rgb(9, 212, 9);
+  color: #cccccc;
   text-align: center;
   padding-block: 10px;
+  font-size: 45px;
 }
 .privacy-container h3 {
-  color: #cccccc;
+  color: rgb(9, 212, 9);
 }
 
 .privacy-container p {
   color: #fff;
-  font-size: 25x;
+  font-size: 20px;
 }
 
 .privacy-container ul li > strong {
@@ -44,7 +45,11 @@
 
 .terms-section p {
   color: #fff;
-  font-size: 25x;
+  font-size: 20px;
+}
+
+.terms-section ol li {
+  font-size: 20px;
 }
 
 .terms-section ol li > strong {

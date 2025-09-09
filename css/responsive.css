@@ -416,10 +416,6 @@
     padding: 0px 0px 60px;
   }
 
-  .trusted-section {
-    padding-bottom: 40px;
-  }
-
   .faqs-section,
   .get-quote-three {
     padding: 90px 0px 70px;
@@ -697,6 +693,16 @@
 
   .news-two__content h3 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .trusted-section {
+    padding-top: 0px !important ;
+    margin-top: 0px !important;
+  }
+  .trusted-section .outer-container {
+    margin-top: 12px;
   }
 }
 
@@ -2091,6 +2097,8 @@
   }
 
   .mbl-heading {
+    font-family: "Loko Cut Extra Bold", sans-serif;
+    font-weight: 800;
     position: relative; /* remove absolute so it flows naturally */
     transform: none;
     top: 117px;
@@ -2155,5 +2163,11 @@
 @media (min-width: 451px) {
   .lazy-dog {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-menu .navigation {
+    margin-left: 42% !important;
   }
 }
